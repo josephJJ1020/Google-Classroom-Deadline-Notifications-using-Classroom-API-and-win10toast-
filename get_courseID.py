@@ -8,7 +8,7 @@ from google.oauth2.credentials import Credentials
 scopes = ['https://www.googleapis.com/auth/classroom.courses' ]
 
 def get_courses():
-    global courseID
+    
     cred=None
     if os.path.exists('token.json'):
         cred=Credentials.from_authorized_user_file('token.json', scopes)
